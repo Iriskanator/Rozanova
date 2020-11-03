@@ -1,19 +1,29 @@
   
-function copy(value) {
-    return arg;
+function square(number) {
+    return number;
 }
 
-function Sum(valueFirst, valueSecond) {
-    return arg1 + arg2;
+function ReturnOfArgument(theNumberForTheSecondItem1, theNumberForTheSecondItem2) {
+    if (isNaN(theNumberForTheSecondItem1)) {
+        return ("a - not a number");
+    }
+    else {
+        if (isNaN(theNumberForTheSecondItem2)) {
+            return ("b - not a number");
+        }
+        else return theNumberForTheSecondItem1 + theNumberForTheSecondItem2;
+    }
 }
 
-function powDouble() {
-    var arrList = [40, 25, "Five", 60, "TRY AGAIN", 5];
-    console.log("Стандартные значения");
-    console.log(arrList);
-    let newArray = arrList.map((value) =>
+// 1.3
+
+function SquaringAnArray() {
+    let myArray = [30, "Two", "Use", 40, "One", 5, 10];
+    console.log('Input data: ');
+    console.log(myArray);
+    let myNewArray = myArray.map((value) =>
         isNaN(value) ? value = 0 : value *= value
     )
-    console.log("Преобразованные значения");
-    console.log(newArray);
+    console.log('Answer:');
+    console.log(myNewArray);
 }
